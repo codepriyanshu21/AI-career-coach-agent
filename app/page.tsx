@@ -47,14 +47,14 @@ export default function Home() {
           className="max-w-2xl"
         >
           <h1 className="bg-gradient-to-tl from-blue-600 to-violet-600 bg-clip-text text-5xl font-extrabold text-transparent md:text-6xl lg:text-7xl">
-            Super charge with {''} 
+            Super charge with {""}
             <span className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
               AI Agents
             </span>
           </h1>
           <p className="mt-6 text-lg text-gray-600 dark:text-neutral-400">
-            Revolutionize your workflow with smart, intuitive AI agents built
-            on modern web technologies.
+            Revolutionize your workflow with smart, intuitive AI agents built on
+            modern web technologies.
           </p>
           <div className="mt-8">
             <a
@@ -94,23 +94,23 @@ export default function Home() {
             {
               icon: "📱",
               title: "25+ Templates",
-              desc: "Responsive and mobile-first templates to kickstart your project."
+              desc: "Responsive and mobile-first templates to kickstart your project.",
             },
             {
               icon: "🎨",
               title: "Customizable",
-              desc: "Built with flexibility in mind, every component is fully customizable."
+              desc: "Built with flexibility in mind, every component is fully customizable.",
             },
             {
               icon: "🚀",
               title: "Free to Use",
-              desc: "Every plugin and asset is documented and ready to use."
+              desc: "Every plugin and asset is documented and ready to use.",
             },
             {
               icon: "📞",
               title: "24/7 Support",
-              desc: "We’re here for you, whenever you need us."
-            }
+              desc: "We’re here for you, whenever you need us.",
+            },
           ].map((item, index) => (
             <motion.div
               key={index}
@@ -122,16 +122,40 @@ export default function Home() {
               <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-600 text-white text-xl">
                 {item.icon}
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-white">{item.title}</h3>
-              <p className="mt-2 text-sm text-gray-600 dark:text-neutral-400">{item.desc}</p>
-              <a href="#" className="mt-3 inline-flex items-center text-sm text-blue-600 transition hover:underline">
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+                {item.title}
+              </h3>
+              <p className="mt-2 text-sm text-gray-600 dark:text-neutral-400">
+                {item.desc}
+              </p>
+              <a
+                href="#"
+                className="mt-3 inline-flex items-center text-sm text-blue-600 transition hover:underline"
+              >
                 Learn more
-                <svg className="ml-1 size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                <svg
+                  className="ml-1 size-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
               </a>
             </motion.div>
           ))}
         </div>
       </section>
+      <footer className="text-center py-4 mt-2 text-sm text-gray-600">
+        <p>
+          © <span className="text-blue-600 font-semibold">2025 Priyanshu</span>{" "}
+          — All rights reserved
+        </p>
+      </footer>
     </div>
   );
 }
