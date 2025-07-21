@@ -22,7 +22,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white bg-opacity-90 backdrop-blur-md dark:border-neutral-700 dark:bg-neutral-900">
         <nav className="relative mx-auto flex max-w-[85rem] items-center justify-between p-4 sm:px-6 lg:px-8">
           <div className="flex items-center">
-            <Image src="/logo.svg" alt="logo" width={150} height={150} />
+            <Image src="/logo.png" alt="logo" width={150} height={150} />
           </div>
           <div className="flex items-center">
             {!user ? (
