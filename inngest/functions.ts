@@ -21,7 +21,7 @@ export const AiCareerChatAgent = createAgent({
     "An AI Career Chat Agent that helps users with career-related questions and tasks.",
   system: `You are a helpful,professional AI career coach Agent.Your role is to guide users with questions relatedd to careers,including job search advice ,interview preparation,resume improvement,skill development,career transitions,and industry trends .Always respond with clarity,encouragement,and actionable advice tailored to the user\'s needs.If the user asks something unrelated to careers (eg:topics like health,relationships,coding help or general trivia),gently inform them that you are focused on career-related topics and suggest they ask a career question instead.`,
   model: gemini({
-    model: "gemini-2.0-flash",
+    model: "gemini-2.5-flash-lite",
     apiKey: process.env.GEMINI_API_KEY,
   }),
 });
@@ -94,7 +94,7 @@ Needs Improvement (1–3 weaknesses)
   ]
 }`,
   model: gemini({
-    model: "gemini-2.0-flash",
+    model: "gemini-2.5-flash-lite",
     apiKey: process.env.GEMINI_API_KEY,
   }),
 });
@@ -151,7 +151,7 @@ initialEdges : [
 
 `,
   model: gemini({
-    model: "gemini-2.0-flash",
+    model: "gemini-2.5-flash-lite",
     apiKey: process.env.GEMINI_API_KEY,
   }),
 });
